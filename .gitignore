@@ -1,0 +1,17 @@
+# Ignore data files
+/data/*.csv
+
+# Ignore Jupyter notebooks (if any)
+*.ipynb
+
+# Ignore Python cache and logs
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Ignore system files
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
