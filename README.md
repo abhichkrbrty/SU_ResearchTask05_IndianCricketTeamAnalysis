@@ -88,6 +88,38 @@ This task made it clear that:
 
 ---
 
+## 🔄 Week 1–2: Progress Summary
+
+During the first two weeks of Task 05, we focused on verifying how accurately an LLM (ChatGPT 4) could answer cricket-related statistical queries using structured CSV datasets of Indian ODI players and captains.
+
+We designed and tested **9 core prompts** including:
+
+- Top run scorer  
+- Best batting average  
+- Most matches played  
+- Highest individual score  
+- Most hundreds  
+- Most runs as captain  
+- Best win percentage (overall)  
+- Best captain with 20+ matches  
+- Visualization of top 5 captains by win %
+
+For each question:
+- We recorded the LLM’s natural language response
+- We validated it using custom Python scripts (in `/validation`)
+- In some cases, we plotted results with Matplotlib
+
+The LLM performed **well on direct queries** but required guidance or clarification for:
+- Edge cases (e.g., single-match captains with 100% win)
+- Ambiguities in columns or formatting
+
+This dual approach proved effective in spotting LLM errors and helped us design better prompts for future experiments.
+
+> All results are recorded in the `/prompts/` folder  
+> All validation scripts are available in `/validation/`
+
+---
+
 ## 📌 Author
 
 **Abhi Chakraborty**  
